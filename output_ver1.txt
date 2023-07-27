@@ -1,0 +1,240 @@
+[----] Criterion v2.4.0
+[====] Running 17 tests from base_invalid_args:
+[RUN ] base_invalid_args::args_missing01
+[----]   Argument missing.
+[PASS] base_invalid_args::args_missing01: (0.01s)
+[RUN ] base_invalid_args::duplicate_argument01
+[----]   Duplicate argument.
+[PASS] base_invalid_args::duplicate_argument01: (0.01s)
+[RUN ] base_invalid_args::input_file_missing
+[----]   Input file is missing.
+[PASS] base_invalid_args::input_file_missing: (0.00s)
+[RUN ] base_invalid_args::l_argument_invalid01
+[----]   l argument is invalid. Negative line number.
+[PASS] base_invalid_args::l_argument_invalid01: (0.01s)
+[RUN ] base_invalid_args::l_argument_invalid02
+[----]   l argument is invalid. End line less than start line.
+[PASS] base_invalid_args::l_argument_invalid02: (0.01s)
+[RUN ] base_invalid_args::l_argument_invalid03
+[----]   l argument is invalid. End line missing.
+[PASS] base_invalid_args::l_argument_invalid03: (0.01s)
+[RUN ] base_invalid_args::l_argument_invalid04
+[----]   l argument is invalid. Comma missing.
+[PASS] base_invalid_args::l_argument_invalid04: (0.01s)
+[RUN ] base_invalid_args::output_file_unwritable01
+[----]   Output file is unwritable.
+[PASS] base_invalid_args::output_file_unwritable01: (0.01s)
+[RUN ] base_invalid_args::output_file_unwritable02
+[----]   Output file is unwritable.
+[PASS] base_invalid_args::output_file_unwritable02: (0.02s)
+[RUN ] base_invalid_args::r_argument_missing01
+[----]   -r option is missing.
+[PASS] base_invalid_args::r_argument_missing01: (0.01s)
+[RUN ] base_invalid_args::r_argument_missing02
+[----]   -r option is missing.
+[PASS] base_invalid_args::r_argument_missing02: (0.01s)
+[RUN ] base_invalid_args::r_argument_missing03
+[----]   -r argument is missing
+[PASS] base_invalid_args::r_argument_missing03: (0.01s)
+[RUN ] base_invalid_args::s_argument_missing01
+[----]   -s option is missing.
+[PASS] base_invalid_args::s_argument_missing01: (0.01s)
+[RUN ] base_invalid_args::s_argument_missing02
+[----]   -s option is missing.
+[PASS] base_invalid_args::s_argument_missing02: (0.01s)
+[RUN ] base_invalid_args::s_argument_missing03
+[----]   -s argument is missing
+[PASS] base_invalid_args::s_argument_missing03: (0.01s)
+[RUN ] base_invalid_args::wildcard_invalid01
+[----]   Search text is not properly formatted.
+[PASS] base_invalid_args::wildcard_invalid01: (0.01s)
+[RUN ] base_invalid_args::wildcard_invalid02
+[----]   Search text is not properly formatted. No asterisks.
+[PASS] base_invalid_args::wildcard_invalid02: (0.01s)
+[====] Running 34 tests from base_output:
+[RUN ] base_output::simple_search01
+[----]   Perform a simple replacement over entire file. Terms have the same length.
+[PASS] base_output::simple_search01: (0.02s)
+[RUN ] base_output::simple_search02
+[----]   Perform a simple replacement in a single line. Start line and end line are the same.
+[PASS] base_output::simple_search02: (0.02s)
+[RUN ] base_output::simple_search03
+[----]   Perform a simple replacement within the range. Search text appears outside the range as well.
+[PASS] base_output::simple_search03: (0.02s)
+[RUN ] base_output::simple_search04
+[----]   Perform a simple replacement within the given range. Replace text is alphanumerical.
+[PASS] base_output::simple_search04: (0.02s)
+[RUN ] base_output::simple_search05
+[----]   Perform a simple replacement within the specified range. Search term is followed by a punctuation mark.
+[PASS] base_output::simple_search05: (0.01s)
+[RUN ] base_output::simple_search06
+[----]   Perform a simple replacement over entire file. Multiple occurences of the search text (at the beginning, in the middle, at the end).
+[PASS] base_output::simple_search06: (0.01s)
+[RUN ] base_output::simple_search07
+[----]   Perform a simple replacement over entire file. Search terms are followed by different characters.
+[PASS] base_output::simple_search07: (0.01s)
+[RUN ] base_output::simple_search08
+[----]   Perform a simple replacement over entire file. Search text appears at the beginning of lines.
+[PASS] base_output::simple_search08: (0.01s)
+[RUN ] base_output::simple_search09
+[----]   Perform a simple replacement over entire file. Input text contains a single word.
+[PASS] base_output::simple_search09: (0.01s)
+[RUN ] base_output::simple_search10
+[----]   Perform a simple replacement over entire file. Search term doesn't appear in the input file.
+[PASS] base_output::simple_search10: (0.01s)
+[RUN ] base_output::wildcard_search01
+[----]   Perform a wildcard prefix replacement over some lines. Terms have different lengths.
+[PASS] base_output::wildcard_search01: (0.01s)
+[RUN ] base_output::wildcard_search02
+[----]   Perform a wildcard prefix replacement over some lines. Terms have different lengths.
+[PASS] base_output::wildcard_search02: (0.01s)
+[RUN ] base_output::wildcard_search03
+[----]   Perform a wildcard prefix replacement in a single line. Start line and end line are the same.
+[PASS] base_output::wildcard_search03: (0.01s)
+[RUN ] base_output::wildcard_search04
+[----]   Perform a wildcard prefix replacement within the range. Search text appears outside the range as well.
+[PASS] base_output::wildcard_search04: (0.01s)
+[RUN ] base_output::wildcard_search05
+[----]   Perform a wildcard prefix replacement within the specified range. Search term is followed by a punctuation mark.
+[PASS] base_output::wildcard_search05: (0.01s)
+[RUN ] base_output::wildcard_search06
+[----]   Perform a a wildcard prefix replacement over entire file. Search terms are followed by different characters.
+[PASS] base_output::wildcard_search06: (0.01s)
+[RUN ] base_output::wildcard_search07
+[----]   Perform a a wildcard prefix replacement over entire file. Multiple occurences of the search text (at the beginning, in the middle, at the end).
+[PASS] base_output::wildcard_search07: (0.01s)
+[RUN ] base_output::wildcard_search08
+[----]   Perform a wildcard prefix replacement over entire file. Input text contains a single word.
+[PASS] base_output::wildcard_search08: (0.01s)
+[RUN ] base_output::wildcard_search09
+[----]   Perform a wildcard prefix replacement over entire file. Search term doesn't appear in the input file.
+[PASS] base_output::wildcard_search09: (0.01s)
+[RUN ] base_output::wildcard_search10
+[----]   Perform a wildcard prefix replacement over entire file. No space after punctuation marks.
+[PASS] base_output::wildcard_search10: (0.01s)
+[RUN ] base_output::wildcard_search11
+[----]   Perform a wildcard prefix replacement in some lines. Search term is not a prefix.
+[PASS] base_output::wildcard_search11: (0.01s)
+[RUN ] base_output::wildcard_search12
+[----]   Perform a wildcard prefix replacement over entire file. Search text is a word itself.
+[PASS] base_output::wildcard_search12: (0.01s)
+[RUN ] base_output::wildcard_search13
+[----]   Perform a wildcard suffix replacement over entire file. Terms have the same length.
+[PASS] base_output::wildcard_search13: (0.01s)
+[RUN ] base_output::wildcard_search14
+[----]   Perform a wildcard suffix replacement over entire file. Terms have different lengths.
+[PASS] base_output::wildcard_search14: (0.01s)
+[RUN ] base_output::wildcard_search15
+[----]   Perform a wildcard suffix replacement in a single line. Start line and end line are the same.
+[PASS] base_output::wildcard_search15: (0.01s)
+[RUN ] base_output::wildcard_search16
+[----]   Perform a wildcard suffix replacement within the range. Search text appears outside the range as well.
+[PASS] base_output::wildcard_search16: (0.02s)
+[RUN ] base_output::wildcard_search17
+[----]   Perform a wildcard suffix replacement within the specified range. Search term is followed by a punctuation mark.
+[PASS] base_output::wildcard_search17: (0.01s)
+[RUN ] base_output::wildcard_search18
+[----]   Perform a a wildcard suffix replacement over entire file. Search terms are followed by different characters.
+[PASS] base_output::wildcard_search18: (0.01s)
+[RUN ] base_output::wildcard_search19
+[----]   Perform a wildcard suffix replacement over entire file. Input text contains a single word.
+[PASS] base_output::wildcard_search19: (0.01s)
+[RUN ] base_output::wildcard_search20
+[----]   Perform a wildcard suffix replacement over entire file. Search term doesn't appear in the input file.
+[PASS] base_output::wildcard_search20: (0.01s)
+[RUN ] base_output::wildcard_search21
+[----]   Perform a wildcard suffix replacement over entire file. No space after punctuation marks.
+[PASS] base_output::wildcard_search21: (0.01s)
+[RUN ] base_output::wildcard_search22
+[----]   Perform a wildcard suffix replacement over input file. Search term is not always a suffix.
+[PASS] base_output::wildcard_search22: (0.01s)
+[RUN ] base_output::wildcard_search23
+[----]   Perform a wildcard suffix replacement over entire file. Search text is a word itself.
+[PASS] base_output::wildcard_search23: (0.01s)
+[RUN ] base_output::wildcard_search24
+[----]   Perform a wildcard suffix replacement over some lines. Search term appears at EOF
+[PASS] base_output::wildcard_search24: (0.01s)
+[====] Running 34 tests from base_valgrind:
+[RUN ] base_valgrind::simple_search01
+[PASS] base_valgrind::simple_search01: (0.72s)
+[RUN ] base_valgrind::simple_search02
+[PASS] base_valgrind::simple_search02: (0.60s)
+[RUN ] base_valgrind::simple_search03
+[PASS] base_valgrind::simple_search03: (0.58s)
+[RUN ] base_valgrind::simple_search04
+[PASS] base_valgrind::simple_search04: (0.63s)
+[RUN ] base_valgrind::simple_search05
+[PASS] base_valgrind::simple_search05: (0.58s)
+[RUN ] base_valgrind::simple_search06
+[PASS] base_valgrind::simple_search06: (0.63s)
+[RUN ] base_valgrind::simple_search07
+[PASS] base_valgrind::simple_search07: (0.62s)
+[RUN ] base_valgrind::simple_search08
+[PASS] base_valgrind::simple_search08: (0.63s)
+[RUN ] base_valgrind::simple_search09
+[PASS] base_valgrind::simple_search09: (0.62s)
+[RUN ] base_valgrind::simple_search10
+[PASS] base_valgrind::simple_search10: (0.56s)
+[RUN ] base_valgrind::wildcard_search01
+[PASS] base_valgrind::wildcard_search01: (0.57s)
+[RUN ] base_valgrind::wildcard_search02
+[PASS] base_valgrind::wildcard_search02: (0.57s)
+[RUN ] base_valgrind::wildcard_search03
+[PASS] base_valgrind::wildcard_search03: (0.56s)
+[RUN ] base_valgrind::wildcard_search04
+[PASS] base_valgrind::wildcard_search04: (0.58s)
+[RUN ] base_valgrind::wildcard_search05
+[PASS] base_valgrind::wildcard_search05: (0.55s)
+[RUN ] base_valgrind::wildcard_search06
+[PASS] base_valgrind::wildcard_search06: (0.51s)
+[RUN ] base_valgrind::wildcard_search07
+[PASS] base_valgrind::wildcard_search07: (0.57s)
+[RUN ] base_valgrind::wildcard_search08
+[PASS] base_valgrind::wildcard_search08: (0.53s)
+[RUN ] base_valgrind::wildcard_search09
+[PASS] base_valgrind::wildcard_search09: (0.53s)
+[RUN ] base_valgrind::wildcard_search10
+[PASS] base_valgrind::wildcard_search10: (0.55s)
+[RUN ] base_valgrind::wildcard_search11
+[PASS] base_valgrind::wildcard_search11: (0.52s)
+[RUN ] base_valgrind::wildcard_search12
+[PASS] base_valgrind::wildcard_search12: (0.54s)
+[RUN ] base_valgrind::wildcard_search13
+[PASS] base_valgrind::wildcard_search13: (0.56s)
+[RUN ] base_valgrind::wildcard_search14
+[PASS] base_valgrind::wildcard_search14: (0.53s)
+[RUN ] base_valgrind::wildcard_search15
+[PASS] base_valgrind::wildcard_search15: (0.57s)
+[RUN ] base_valgrind::wildcard_search16
+[PASS] base_valgrind::wildcard_search16: (0.56s)
+[RUN ] base_valgrind::wildcard_search17
+[PASS] base_valgrind::wildcard_search17: (0.54s)
+[RUN ] base_valgrind::wildcard_search18
+[PASS] base_valgrind::wildcard_search18: (0.54s)
+[RUN ] base_valgrind::wildcard_search19
+[PASS] base_valgrind::wildcard_search19: (0.54s)
+[RUN ] base_valgrind::wildcard_search20
+[PASS] base_valgrind::wildcard_search20: (0.54s)
+[RUN ] base_valgrind::wildcard_search21
+[PASS] base_valgrind::wildcard_search21: (0.52s)
+[RUN ] base_valgrind::wildcard_search22
+[PASS] base_valgrind::wildcard_search22: (0.53s)
+[RUN ] base_valgrind::wildcard_search23
+[PASS] base_valgrind::wildcard_search23: (0.54s)
+[RUN ] base_valgrind::wildcard_search24
+[PASS] base_valgrind::wildcard_search24: (0.54s)
+[====] Running 4 tests from grading_output:
+[RUN ] grading_output::piazza_search01
+[----]   Piazza suggestion
+[PASS] grading_output::piazza_search01: (0.01s)
+[RUN ] grading_output::piazza_search02
+[----]   Piazza suggestion
+[PASS] grading_output::piazza_search02: (0.01s)
+[RUN ] grading_output::piazza_search03
+[----]   Piazza suggestion
+[PASS] grading_output::piazza_search03: (0.01s)
+[RUN ] grading_output::piazza_search04
+[----]   Piazza suggestion
+[PASS] grading_output::piazza_search04: (0.01s)
+[----] Writing json report in `test_results.json`.
+[====] Synthesis: Tested: 89 | Passing: 89 | Failing: 0 | Crashing: 0 
